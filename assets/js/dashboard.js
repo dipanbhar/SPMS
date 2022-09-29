@@ -63,11 +63,11 @@
     }
     if ($("#transaction-history").length) {
       var areaData = {
-        labels: ["Paypal", "Stripe","Cash"],
+        labels: ["Generation", "Consumption","Saved"],
         datasets: [{
-            data: [55, 25, 20],
+            data: [120, 65, 55],
             backgroundColor: [
-              "#111111","#00d25b","#ffab00"
+              "#00d25b","#C0C0C0","#ffab00"
             ]
           }
         ]
@@ -102,11 +102,11 @@
           ctx.textBaseline = "middle";
           ctx.fillStyle = "#ffffff";
       
-          var text = "$1200", 
+          var text = "120KWH", 
               textX = Math.round((width - ctx.measureText(text).width) / 2),
               textY = height / 2.4;
       
-          ctx.fillText(text, textX, textY);
+           ctx.fillText(text, textX, textY);
 
           ctx.restore();
           var fontSize = 0.75;

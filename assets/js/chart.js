@@ -5,7 +5,7 @@ $(function() {
    */
   'use strict';
   var data = {
-    labels: ["2013", "2014", "2014", "2015", "2016", "2017"],
+    labels: ["2013", "25th Sept", "26th Sept", "27th Sept", "28th Sept", "29th Sept"],
     datasets: [{
       label: '# of Votes',
       data: [10, 19, 3, 5, 2, 3],
@@ -89,7 +89,7 @@ $(function() {
   
   var doughnutPieData = {
     datasets: [{
-      data: [30, 40, 30],
+      data: [30, 70, 0],
       backgroundColor: [
         'rgba(255, 99, 132, 0.5)',
         'rgba(54, 162, 235, 0.5)',
@@ -123,9 +123,9 @@ $(function() {
     }
   };
   var areaData = {
-    labels: ["2013", "2014", "2015", "2016", "2017"],
+    labels: ["25th Sept", "26th Sept", "27th Sept", "28th Sept", "29th Sept"],
     datasets: [{
-      label: '# of Votes',
+      label: 'Energy (KWH)',
       data: [12, 19, 3, 5, 2, 3],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
@@ -169,26 +169,26 @@ $(function() {
   }
 
   var multiAreaData = {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    labels: ["23th Sept","24th Sept","25th Sept", "26th Sept", "27th Sept", "Yesterday", "Today","Tomorrow"],
     datasets: [{
-        label: 'Facebook',
-        data: [8, 11, 13, 15, 12, 13, 16, 15, 13, 19, 11, 14],
+        label: 'Consumptions',
+        data: [12, 13, 16, 15, 13, 19, 11, 14],
         borderColor: ['rgba(255, 99, 132, 0.5)'],
         backgroundColor: ['rgba(255, 99, 132, 0.5)'],
         borderWidth: 1,
         fill: true
       },
       {
-        label: 'Twitter',
-        data: [7, 17, 12, 16, 14, 18, 16, 12, 15, 11, 13, 9],
+        label: 'Generation',
+        data: [14, 18, 16, 12, 15, 11, 13, 9],
         borderColor: ['rgba(54, 162, 235, 0.5)'],
         backgroundColor: ['rgba(54, 162, 235, 0.5)'],
         borderWidth: 1,
         fill: true
       },
       {
-        label: 'Linkedin',
-        data: [6, 14, 16, 20, 12, 18, 15, 12, 17, 19, 15, 11],
+        label: 'Saved',
+        data: [6, 14, 16, 20, 12, 18, 15, 12],
         borderColor: ['rgba(255, 206, 86, 0.5)'],
         backgroundColor: ['rgba(255, 206, 86, 0.5)'],
         borderWidth: 1,
@@ -205,18 +205,18 @@ $(function() {
     },
     elements: {
       point: {
-        radius: 0
+        radius: 3
       }
     },
     scales: {
       xAxes: [{
         gridLines: {
-          display: false
+          display: true
         }
       }],
       yAxes: [{
         gridLines: {
-          display: false
+          display: true
         }
       }]
     }
